@@ -21,3 +21,4 @@ RUN /bin/sh /tmp/set-mysql-password.sh
 
 EXPOSE 80
 CMD ["/usr/bin/supervisord"]
+
