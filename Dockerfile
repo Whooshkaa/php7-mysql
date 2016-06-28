@@ -4,6 +4,11 @@ MAINTAINER Phil Dodd "tripper54@gmail.com"
 ENV LAST_UPDATED 2016-06-27
 
 ENV DEBIAN_FRONTEND noninteractive
+
+# Adding the official Oracle MySQL APT repositories to install MySQL 5.6 (including the apt-get key)
+RUN apt-key adv --keyserver keys.gnupg.net --recv-keys 5072E1F5
+RUN echo "deb http://repo.mysql.com/apt/debian/ jessie mysql-5.6" >> /etc/apt/sources.list
+
 # mysql
 RUN apt-get update -y
 RUN apt-get install -y mysql-client mysql-server python-mysqldb
