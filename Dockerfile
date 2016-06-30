@@ -1,7 +1,7 @@
 # Version 0.0.1
 FROM whooshkaa/php7-laravel
 MAINTAINER Phil Dodd "tripper54@gmail.com"
-ENV LAST_UPDATED 2016-06-27
+ENV LAST_UPDATED 2016-06-30
 
 ENV DEBIAN_FRONTEND noninteractive
 
