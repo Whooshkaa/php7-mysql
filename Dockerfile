@@ -1,7 +1,7 @@
 # Version 0.0.1
 FROM whooshkaa/php7-laravel
 MAINTAINER Phil Dodd "tripper54@gmail.com"
-ENV LAST_UPDATED 2016-06-30
+ENV LAST_UPDATED 2016-08-03
 
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -12,10 +12,6 @@ RUN echo "deb http://repo.mysql.com/apt/debian/ jessie mysql-5.6" >> /etc/apt/so
 # mysql
 RUN apt-get update -y
 RUN apt-get install -y mysql-client mysql-server python-mysqldb
-
-#supervisord
-RUN apt-get install -y supervisor
-RUN mkdir -p /var/log/supervisor
 
 # copy supervisor file with added mysql start command
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
