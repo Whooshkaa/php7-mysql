@@ -1,4 +1,4 @@
-# Version 0.0.1
+# Version 0.0.2
 FROM whooshkaa/php7-laravel
 MAINTAINER Phil Dodd "phil@whooshkaa.com"
 ENV LAST_UPDATED 2017-05-18
